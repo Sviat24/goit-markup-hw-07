@@ -281,19 +281,24 @@ button {
   color: var(--secondary-text);
 }
 
-.about-list {
+.about__list {
   display: flex;
   gap: 30px;
 }
+
+/* .about__item:not(:last-child) {
+  margin-right: 30px;
+} */
+
 .about {
   padding-top: 0;
 }
 
-.overlay-open {
+.about__img {
   position: relative;
 }
 
-.overlay-about {
+.about__text {
   position: absolute;
   display: flex;
   justify-content: center;
