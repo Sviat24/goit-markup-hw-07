@@ -82,33 +82,33 @@ button {
 /* Utility */ /* Utility */ /* Utility */ /* Utility */ /* Utility */
 
 /* Logo */ /* Logo */ /* Logo */ /* Logo */ /* Logo */
-.logo-style,
-.logo-studio,
-.logo-style-footer,
-.logo-studio-footer {
+.logo__style,
+.logo__studio,
+.footer__logo,
+.footer__logo--studio {
   font-family: var(--secondary-font);
 }
 
-.logo-style {
+.logo__style {
   color: var(--accent-color);
 }
-.logo-studio {
+.logo__studio {
   color: var(--secondary-text);
 }
 
-.logo-style-footer {
+.footer__logo {
   color: var(--accent-color);
 }
-.logo-studio-footer {
+.footer__logo--studio {
   color: var(--secondary-text-white);
 }
-.logo-style {
+.logo__style {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-studio {
+.logo__studio {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -132,7 +132,7 @@ button {
   align-items: center;
 }
 
-.page-nav {
+.logo {
   display: flex;
   align-items: center;
 }
@@ -403,7 +403,7 @@ button {
   gap: 30px;
 }
 
-.client-link {
+.client__link {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -415,23 +415,23 @@ button {
   transition: border var(--transition-speed);
 }
 
-.client-list {
+.client__list {
   width: 170px;
   height: 92px;
 }
 
-.client-logo {
+.client__logo {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
 }
 
-.client-link:hover .client-logo,
-.client-link:focus .client-logo {
+.client__link:hover .client__logo,
+.client__link:focus .client__logo {
   fill: var(--accent-color);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -496,7 +496,7 @@ button {
   padding-bottom: 60px;
 }
 
-.logo-style-footer {
+.footer__logo {
   display: block;
   padding: 0;
   margin-bottom: 20px;
@@ -505,7 +505,7 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-studio-footer {
+.footer__logo--studio {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -532,7 +532,7 @@ button {
   margin-bottom: 9px;
 }
 
-.podval {
+.footer__row {
   display: flex;
   align-items: baseline;
 }
@@ -648,7 +648,7 @@ button {
   margin-left: 10px;
 }
 
-.footer-size {
+.footer__size {
   flex-grow: 1;
 }
 
