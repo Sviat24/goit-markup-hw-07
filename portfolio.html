@@ -217,16 +217,14 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="podval container">
-        <div>
-          <a class="logo-style-footer link" href="/"
-            >Web<span class="logo-studio-footer link">Studio</span>
-          </a>
+      <div class="footer__row container">
+        <div class="footer__size">
+          <a class="footer__logo" href="/">Web<span class="footer__logo--studio">Studio</span> </a>
           <address class="address">
-            <ul class="list">
-              <li class="contact-item-footer">
+            <ul>
+              <li class="footer__item">
                 <a
-                  class="contact-map link"
+                  class="footer__map"
                   href="https://goo.gl/maps/9qmAzHa2wMczzQS48"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -234,56 +232,62 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="contact-item-footer">
-                <a class="contact-footer link" href="mailto:info@example.com">info@example.com</a>
+              <li class="footer__item">
+                <a class="footer__contact" href="mailto:info@example.com">info@example.com</a>
               </li>
-              <li class="contact-item-footer">
-                <a class="contact-footer link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <li class="footer__item">
+                <a class="footer__contact" href="tel:+380991111111">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="fsocial-footer">
-          <h3 class="fsocial-titel">присоединяйтесь</h3>
-          <ul class="fsocial-list list">
+        <div class="footer__social">
+          <h3 class="footer__titel">присоединяйтесь</h3>
+          <ul class="footer__list">
             <li>
-              <a href="" class="fsocial-link">
-                <svg class="fsocial-icon" width="20px" height="20px">
+              <a href="" class="footer__link">
+                <svg class="footer__icon" width="20px" height="20px">
                   <use href="./images/sprite/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="fsocial-link">
-                <svg class="fsocial-icon" width="20px" height="20px">
+              <a href="" class="footer__link">
+                <svg class="footer__icon" width="20px" height="20px">
                   <use href="./images/sprite/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="fsocial-link">
-                <svg class="fsocial-icon" width="20px" height="20px">
+              <a href="" class="footer__link">
+                <svg class="footer__icon" width="20px" height="20px">
                   <use href="./images/sprite/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="" class="fsocial-link">
-                <svg class="fsocial-icon" width="20px" height="20px">
+              <a href="" class="footer__link">
+                <svg class="footer__icon" width="20px" height="20px">
                   <use href="./images/sprite/sprite.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="form-footer">
-          <p class="mailing">подпишитесь на рассылку</p>
+        <div class="footer__form">
+          <p class="footer__mailing">подпишитесь на рассылку</p>
           <form class="subscribe">
-            <input type="email" name="email" class="input-email" id="email" placeholder="E-mail" />
+            <input
+              type="email"
+              name="email"
+              class="subscribe__email"
+              id="email"
+              placeholder="E-mail"
+            />
             <button class="btn" type="submit">
               Подписаться
-              <svg class="icon-send" width="24px" height="24px">
-                <use href="/images/sprite/sprite.svg#send"></use>
+              <svg class="subscribe__icon" width="24px" height="24px">
+                <use href="./images/sprite/sprite.svg#send"></use>
               </svg>
             </button>
           </form>

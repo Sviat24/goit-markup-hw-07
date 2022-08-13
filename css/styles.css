@@ -294,7 +294,7 @@ button {
   margin-right: 30px;
 } */
 
-.about-padding {
+.about--padding {
   padding-top: 0;
 }
 
@@ -472,13 +472,13 @@ button {
   color: var(--accent-color);
 }
 
-.contact-footer:hover,
-.contact-footer:focus {
+.footer__contact:hover,
+.footer__contact:focus {
   color: var(--accent-color);
 }
 
-.contact-map:hover,
-.contact-map:focus {
+.footer__map:hover,
+.footer__map:focus {
   color: var(--accent-color);
 }
 
@@ -512,7 +512,7 @@ button {
   letter-spacing: 0.03em;
 }
 
-.contact-map {
+.footer__map {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -520,7 +520,7 @@ button {
   transition: color var(--transition-speed);
 }
 
-.contact-footer {
+.footer__contact {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -528,7 +528,7 @@ button {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-speed);
 }
-.contact-item-footer:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -537,11 +537,11 @@ button {
   align-items: baseline;
 }
 
-.fsocial-footer {
+.footer__social {
   margin-left: 70px;
 }
 
-.fsocial-titel {
+.footer__titel {
   display: block;
   font-weight: 700;
   margin-bottom: 20px;
@@ -552,13 +552,13 @@ button {
   color: var(--secondory-background-color);
 }
 
-.fsocial-list {
+.footer__list {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.fsocial-link {
+.footer__link {
   display: flex;
   align-content: center;
   justify-content: center;
@@ -571,18 +571,18 @@ button {
   transition: background-color var(--transition-speed), color var(--transition-speed);
 }
 
-.fsocial-link:hover,
-.fsocial-link:focus {
+.footer__link:hover,
+.footer__link:focus {
   background-color: var(--accent-color);
 }
 
-.form-footer {
+.footer__form {
   display: block;
   align-items: center;
   margin-left: 93px;
 }
 
-.mailing {
+.footer__mailing {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -599,7 +599,7 @@ button {
   justify-content: center;
 }
 
-.input-email {
+.subscribe__email {
   width: 358px;
   height: 50px;
   padding-left: 42px;
@@ -612,7 +612,7 @@ button {
   color: #ffffff;
 }
 
-.input-email:focus {
+.subscribe__email:focus {
   outline: none;
 }
 
@@ -644,7 +644,7 @@ button {
   color: var(--secondary-text-white);
 }
 
-.icon-send {
+.subscribe__icon {
   margin-left: 10px;
 }
 
