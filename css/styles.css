@@ -75,6 +75,10 @@ button {
   padding-right: 15px;
 }
 
+.section {
+  padding: 94px 0;
+}
+
 /* Utility */ /* Utility */ /* Utility */ /* Utility */ /* Utility */
 
 /* Logo */ /* Logo */ /* Logo */ /* Logo */ /* Logo */
@@ -271,7 +275,7 @@ button {
 
 /* About */ /* About */ /* About */ /* About */ /* About */ /* About */
 
-.about__titel {
+.section__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -281,7 +285,7 @@ button {
   color: var(--secondary-text);
 }
 
-.about__list {
+.about {
   display: flex;
   gap: 30px;
 }
@@ -290,7 +294,7 @@ button {
   margin-right: 30px;
 } */
 
-.about {
+.about-padding {
   padding-top: 0;
 }
 
@@ -321,16 +325,16 @@ button {
 
 /* Team */ /* Team */ /* Team */ /* Team */ /* Team */ /* Team */ /* Team */
 
-.team {
+.team--background {
   background: #f5f4fa;
 }
-.team-jpg {
+.team {
   display: flex;
   align-content: center;
   gap: 30px;
 }
 
-.team-name {
+.team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -340,7 +344,7 @@ button {
   color: var(--secondary-text);
 }
 
-.team-social-link {
+.team__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -351,39 +355,39 @@ button {
   transition: background-color var(--transition-speed);
 }
 
-.team-icon {
+.team__svg {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
 }
 
-.team-social-link:hover,
-.team-social-link:focus {
+.team__link:hover,
+.team__link:focus {
   background: var(--accent-color);
 }
 
-.team-social-link:hover .team-icon,
-.team-social-link:focus .team-icon {
+.team__link:hover .team__svg,
+.team__link:focus .team__svg {
   fill: var(--primary-background-color);
 }
 
-.team-social {
+.team__social {
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.team-padding {
+.team__card {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.team-job {
+.team__job {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team-social-item {
+.team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
