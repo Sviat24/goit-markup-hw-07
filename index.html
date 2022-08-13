@@ -432,7 +432,7 @@
               id="email"
               placeholder="E-mail"
             />
-            <button class="btn" type="submit">
+            <button class="subscribe__btn" type="submit">
               Подписаться
               <svg class="subscribe__icon" width="24px" height="24px">
                 <use href="./images/sprite/sprite.svg#send"></use>
@@ -443,21 +443,21 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="close-btm" data-modal-close>
-          <svg class="modal-icon-close" width="18px" height="18px">
+      <div class="backdrop__modal">
+        <button type="button" class="backdrop__close" data-modal-close>
+          <svg class="backdrop__icon" width="18px" height="18px">
             <use href="./images/sprite/sprite.svg#close"></use>
           </svg>
         </button>
         <!-- form for modal -->
 
-        <form class="modal-form">
-          <p class="text-form">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="form-lable">
-            <span class="form-name">Имя</span>
-            <span class="form-modal-icon">
+        <form class="form">
+          <p class="form__text">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="form__lable">
+            <span class="form__name">Имя</span>
+            <span class="form__icon">
               <input
-                class="form-input"
+                class="form__input"
                 type="text"
                 name="user_name"
                 required
@@ -465,16 +465,16 @@
                 minlength="2"
               />
 
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="form__svg" width="18px" height="18px">
                 <use href="./images/sprite/sprite.svg#name"></use>
               </svg>
             </span>
           </label>
-          <label class="form-lable">
-            <span class="form-name">Телефон</span>
-            <span class="form-modal-icon">
+          <label class="form__lable">
+            <span class="form__name">Телефон</span>
+            <span class="form__icon">
               <input
-                class="form-input"
+                class="form__input"
                 type="tel"
                 name="user_phone"
                 required
@@ -482,32 +482,32 @@
                 title="xxx-xxx-xx-xx"
               />
 
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="form__svg" width="18px" height="18px">
                 <use href="./images/sprite/sprite.svg#tel"></use>
               </svg>
             </span>
           </label>
-          <label class="form-lable">
-            <span class="form-name">Почта</span>
-            <span class="form-modal-icon">
+          <label class="form__lable">
+            <span class="form__name">Почта</span>
+            <span class="form__icon">
               <input
-                class="form-input"
+                class="form__input"
                 type="email"
                 name="user_email"
                 required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               />
 
-              <svg class="modal-icon" width="18px" height="18px">
+              <svg class="form__svg" width="18px" height="18px">
                 <use href="./images/sprite/sprite.svg#mail"></use>
               </svg>
             </span>
           </label>
-          <label class="form-lable">
-            <span class="form-name">Комментарий</span>
+          <label class="form__lable">
+            <span class="form__name">Комментарий</span>
             <textarea
               name="user-message"
-              class="form-texterea"
+              class="form__texterea"
               placeholder="Введите текст"
             ></textarea>
           </label>
@@ -516,14 +516,14 @@
             id="user-policy"
             type="checkbox"
             name="user-policy"
-            class="form-checkbox visually-hidden"
+            class="form__checkbox visually-hidden"
           />
-          <label for="user-policy" class="form-check-desk"
-            >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="text-link"
+          <label for="user-policy" class="form__check"
+            >Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="form__text--link"
               >Условия договора</a
             >
           </label>
-          <button type="submit" class="btm-form-submit">Отправить</button>
+          <button type="submit" class="form__submit">Отправить</button>
         </form>
       </div>
     </div>
