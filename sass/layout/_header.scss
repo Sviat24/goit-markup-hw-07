@@ -23,13 +23,15 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text);
   transition: color var(--transition-speed);
+  &.current {
+    color: var(--accent-color);
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.menu__link:hover,
-.menu__link:focus {
-  color: var(--accent-color);
 }

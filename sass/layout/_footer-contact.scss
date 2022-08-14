@@ -5,6 +5,10 @@
 
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-speed);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer__map {
@@ -13,6 +17,10 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-white);
   transition: color var(--transition-speed);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer__link {
@@ -26,6 +34,10 @@
   background: rgba(255, 255, 255, 0.1);
   fill: var(--secondory-background-color);
   transition: background-color var(--transition-speed), color var(--transition-speed);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .subscribe {
@@ -45,11 +57,11 @@
   padding-bottom: 15px;
   padding-left: 16px;
   color: #ffffff;
+  &:focus {
+    outline: none;
+  }
 }
 
-.subscribe__email:focus {
-  outline: none;
-}
 .footer__form {
   display: block;
   align-items: center;
@@ -75,28 +87,9 @@
   color: var(--secondary-text-white);
   margin-bottom: 20px;
 }
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-  background-color: var(--hover-color-btm);
-  color: var(--secondary-text-white);
-}
 
 .subscribe__icon {
   margin-left: 10px;
-}
-.footer__link:hover,
-.footer__link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer__contact:hover,
-.footer__contact:focus {
-  color: var(--accent-color);
-}
-
-.footer__map:hover,
-.footer__map:focus {
-  color: var(--accent-color);
 }
 
 .subscribe__btn {
@@ -119,4 +112,9 @@
   width: 200px;
   transition: background-color var(--transition-speed), color var(--transition-speed),
     box-shadow var(--transition-speed);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color-btm);
+    color: var(--secondary-text-white);
+  }
 }

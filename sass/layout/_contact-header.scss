@@ -9,6 +9,10 @@
   letter-spacing: 0.02em;
   color: var(--primary-text);
   transition: color var(--transition-speed);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .contact {
   display: flex;
@@ -22,9 +26,4 @@
 
 .contact__item + .contact__item {
   margin-left: 50px;
-}
-
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--accent-color);
 }

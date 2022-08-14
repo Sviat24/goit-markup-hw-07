@@ -47,12 +47,11 @@
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
-}
-
-.backdrop__close:hover .backdrop__icon,
-.backdrop__close:focus .backdrop__icon {
-  fill: var(--accent-color);
-  transition: var(--transition-speed);
+  &:hover .backdrop__icon,
+  &:focus .backdrop__icon {
+    fill: var(--accent-color);
+    transition: var(--transition-speed);
+  }
 }
 
 .backdrop__icon {

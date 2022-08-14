@@ -29,12 +29,6 @@
   color: var(--secondary-text-white);
 }
 
-.hero__btm:hover,
-.hero__btm:focus {
-  background-color: var(--hover-color-btm);
-  color: var(--secondary-text-white);
-}
-
 .hero__btm {
   display: inline-block;
   min-width: 200px;
@@ -51,4 +45,9 @@
   background-color: var(--accent-color);
   color: var(--secondary-text-white);
   transition: background-color var(--transition-speed), color 250ms var(--transition-speed);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color-btm);
+    color: var(--secondary-text-white);
+  }
 }

@@ -26,6 +26,10 @@
   border-radius: 50%;
   background-color: var(--primary-background-color);
   transition: background-color var(--transition-speed);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+  }
 }
 
 .team__social {
@@ -48,16 +52,10 @@
 .team__svg {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
-}
-
-.team__link:hover,
-.team__link:focus {
-  background: var(--accent-color);
-}
-
-.team__link:hover .team__svg,
-.team__link:focus .team__svg {
-  fill: var(--primary-background-color);
+  .team__link:hover &,
+  .team__link:focus & {
+    fill: var(--primary-background-color);
+  }
 }
 
 .team__item {

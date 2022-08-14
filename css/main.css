@@ -89,10 +89,6 @@ button {
   background-color: var(--accent-color);
 }
 
-.menu__link.current {
-  color: var(--accent-color);
-}
-
 .section__title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -152,9 +148,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
 }
-
-.backdrop__close:hover .backdrop__icon,
-.backdrop__close:focus .backdrop__icon {
+.backdrop__close:hover .backdrop__icon, .backdrop__close:focus .backdrop__icon {
   fill: var(--accent-color);
   transition: var(--transition-speed);
 }
@@ -176,6 +170,10 @@ button {
   border-radius: 4px;
   padding-left: 42px;
   transition: border-color var(--transition-speed);
+}
+.form__input:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .form__name {
@@ -214,12 +212,6 @@ button {
   display: block;
   transition: fill var(--transition-speed);
 }
-
-.form__input:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
-
 .form__input:focus + .form__svg {
   fill: var(--accent-color);
 }
@@ -236,30 +228,14 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 20px;
 }
-
+.form__texterea:focus {
+  border-color: var(--accent-color);
+}
 .form__texterea::placeholder {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.form__texterea:focus {
-  border-color: var(--accent-color);
-}
-
-.form__check::before {
-  display: block;
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--secondary-text);
-  content: "";
-  cursor: pointer;
-  margin-right: 7px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-repeat: no-repeat;
-  background-size: 16px 15px;
-  transition: box-shadow var(--transition-speed);
 }
 
 .form__checkbox:checked + .form__check::before {
@@ -286,6 +262,19 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
+.form__check::before {
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--secondary-text);
+  content: "";
+  cursor: pointer;
+  margin-right: 7px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-repeat: no-repeat;
+  background-size: 16px 15px;
+  transition: box-shadow var(--transition-speed);
+}
 
 .form__submit {
   display: inline-block;
@@ -305,9 +294,7 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition-speed), color var(--transition-speed), box-shadow var(--transition-speed);
 }
-
-.form__submit:hover,
-.form__submit:focus {
+.form__submit:hover, .form__submit:focus {
   background-color: var(--hover-color-btm);
   color: var(--secondary-text-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -340,14 +327,15 @@ button {
   color: var(--secondary-text);
   transition: color var(--transition-speed);
 }
+.menu__link.current {
+  color: var(--accent-color);
+}
+.menu__link:hover, .menu__link:focus {
+  color: var(--accent-color);
+}
 
 .menu__item:not(:last-child) {
   margin-right: 50px;
-}
-
-.menu__link:hover,
-.menu__link:focus {
-  color: var(--accent-color);
 }
 
 .logo {
@@ -410,12 +398,6 @@ button {
   color: var(--secondary-text-white);
 }
 
-.hero__btm:hover,
-.hero__btm:focus {
-  background-color: var(--hover-color-btm);
-  color: var(--secondary-text-white);
-}
-
 .hero__btm {
   display: inline-block;
   min-width: 200px;
@@ -432,6 +414,10 @@ button {
   background-color: var(--accent-color);
   color: var(--secondary-text-white);
   transition: background-color var(--transition-speed), color 250ms var(--transition-speed);
+}
+.hero__btm:hover, .hero__btm:focus {
+  background-color: var(--hover-color-btm);
+  color: var(--secondary-text-white);
 }
 
 .description {
@@ -534,6 +520,9 @@ button {
   background-color: var(--primary-background-color);
   transition: background-color var(--transition-speed);
 }
+.team__link:hover, .team__link:focus {
+  background: var(--accent-color);
+}
 
 .team__social {
   display: flex;
@@ -558,14 +547,7 @@ button {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
 }
-
-.team__link:hover,
-.team__link:focus {
-  background: var(--accent-color);
-}
-
-.team__link:hover .team__svg,
-.team__link:focus .team__svg {
+.team__link:hover .team__svg, .team__link:focus .team__svg {
   fill: var(--primary-background-color);
 }
 
@@ -592,6 +574,10 @@ button {
   height: 100%;
   transition: border var(--transition-speed);
 }
+.client__link:hover, .client__link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
 
 .client__list {
   width: 170px;
@@ -602,16 +588,8 @@ button {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
 }
-
-.client__link:hover .client__logo,
-.client__link:focus .client__logo {
+.client__link:hover .client__logo, .client__link:focus .client__logo {
   fill: var(--accent-color);
-}
-
-.client__link:hover,
-.client__link:focus {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
 }
 
 .contact__link {
@@ -626,6 +604,9 @@ button {
   color: var(--primary-text);
   transition: color var(--transition-speed);
 }
+.contact__link:hover, .contact__link:focus {
+  color: var(--accent-color);
+}
 
 .contact {
   display: flex;
@@ -639,11 +620,6 @@ button {
 
 .contact__item + .contact__item {
   margin-left: 50px;
-}
-
-.contact__link:hover,
-.contact__link:focus {
-  color: var(--accent-color);
 }
 
 .address {
@@ -728,6 +704,9 @@ button {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-speed);
 }
+.footer__contact:hover, .footer__contact:focus {
+  color: var(--accent-color);
+}
 
 .footer__map {
   font-size: 14px;
@@ -735,6 +714,9 @@ button {
   letter-spacing: 0.03em;
   color: var(--secondary-text-white);
   transition: color var(--transition-speed);
+}
+.footer__map:hover, .footer__map:focus {
+  color: var(--accent-color);
 }
 
 .footer__link {
@@ -748,6 +730,9 @@ button {
   background: rgba(255, 255, 255, 0.1);
   fill: var(--secondory-background-color);
   transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+.footer__link:hover, .footer__link:focus {
+  background-color: var(--accent-color);
 }
 
 .subscribe {
@@ -768,7 +753,6 @@ button {
   padding-left: 16px;
   color: #ffffff;
 }
-
 .subscribe__email:focus {
   outline: none;
 }
@@ -800,29 +784,8 @@ button {
   margin-bottom: 20px;
 }
 
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-  background-color: var(--hover-color-btm);
-  color: var(--secondary-text-white);
-}
-
 .subscribe__icon {
   margin-left: 10px;
-}
-
-.footer__link:hover,
-.footer__link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer__contact:hover,
-.footer__contact:focus {
-  color: var(--accent-color);
-}
-
-.footer__map:hover,
-.footer__map:focus {
-  color: var(--accent-color);
 }
 
 .subscribe__btn {
@@ -845,6 +808,10 @@ button {
   width: 200px;
   transition: background-color var(--transition-speed), color var(--transition-speed), box-shadow var(--transition-speed);
 }
+.subscribe__btn:hover, .subscribe__btn:focus {
+  background-color: var(--hover-color-btm);
+  color: var(--secondary-text-white);
+}
 
 .button {
   display: flex;
@@ -866,9 +833,7 @@ button {
   color: var(--secondary-text);
   transition: background-color var(--transition-speed), color var(--transition-speed), box-shadow var(--transition-speed);
 }
-
-.button__filter:hover,
-.button__filter:focus {
+.button__filter:hover, .button__filter:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   background-color: var(--accent-color);
@@ -904,15 +869,13 @@ button {
   padding: 20px 20px;
 }
 
-.gallery__link:hover,
-.gallery__link:focus {
+.gallery__link {
+  transition: box-shadow var(--transition-speed);
+}
+.gallery__link:hover, .gallery__link:focus {
   display: block;
   background: #ffffff;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.gallery__link {
-  transition: box-shadow var(--transition-speed);
 }
 
 .gallery__wrapper {
@@ -938,8 +901,6 @@ button {
   transform: translate(0, 100%);
   transition: transform var(--transition-speed);
 }
-
-.gallery__link:hover .gallery__overlay,
-.gallery__link:focus .gallery__overlay {
+.gallery__link:hover .gallery__overlay, .gallery__link:focus .gallery__overlay {
   transform: translate(0, 0);
 }/*# sourceMappingURL=main.css.map */
