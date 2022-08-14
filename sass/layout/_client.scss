@@ -1,0 +1,38 @@
+.client {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client__link {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  transition: border var(--transition-speed);
+}
+
+.client__list {
+  width: 170px;
+  height: 92px;
+}
+
+.client__logo {
+  fill: var(--icon-color);
+  transition: fill var(--transition-speed);
+}
+
+.client__link:hover .client__logo,
+.client__link:focus .client__logo {
+  fill: var(--accent-color);
+}
+
+.client__link:hover,
+.client__link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
