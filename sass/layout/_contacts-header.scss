@@ -1,4 +1,4 @@
-.contact__link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -14,16 +14,16 @@
     color: var(--accent-color);
   }
 }
-.contact {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contact__icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contact__item + .contact__item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }

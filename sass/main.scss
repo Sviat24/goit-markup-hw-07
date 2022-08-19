@@ -4,9 +4,9 @@
 @import './base/common';
 @import './base/section';
 @import './base/container';
+@import './base/section-title';
 
 @import './components/current';
-@import './components/section-title';
 @import './components/modal-window';
 @import './components/modal-form';
 
@@ -16,8 +16,8 @@
 @import './layout/description';
 @import './layout/about';
 @import './layout/team';
-@import './layout/client';
-@import './layout/contact-header';
+@import './layout/clients';
+@import './layout/contacts-header';
 @import './layout/footer';
 @import './layout/footer-logo';
 @import './layout/footer-contact';

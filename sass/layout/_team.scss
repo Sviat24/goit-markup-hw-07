@@ -8,7 +8,7 @@
   background: #f5f4fa;
 }
 
-.team__name {
+.team__titel {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -17,7 +17,7 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text);
 }
-.team__link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
   }
 }
 
-.team__social {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -42,18 +42,18 @@
   padding-bottom: 30px;
 }
 
-.team__job {
+.team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
-.team__svg {
+.socials__svg {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
-  .team__link:hover &,
-  .team__link:focus & {
+  .socials__link:hover &,
+  .socials__link:focus & {
     fill: var(--primary-background-color);
   }
 }

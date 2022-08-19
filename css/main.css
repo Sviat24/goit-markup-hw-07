@@ -77,7 +77,17 @@ button {
   padding-right: 15px;
 }
 
-.current::after {
+.section__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text);
+}
+
+.menu__link--current::after {
   position: absolute;
   content: "";
   left: 0;
@@ -87,16 +97,6 @@ button {
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
-}
-
-.section__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text);
 }
 
 .backdrop {
@@ -327,7 +327,7 @@ button {
   color: var(--secondary-text);
   transition: color var(--transition-speed);
 }
-.menu__link.current {
+.menu__link.menu__link--current {
   color: var(--accent-color);
 }
 .menu__link:hover, .menu__link:focus {
@@ -338,12 +338,12 @@ button {
   margin-right: 50px;
 }
 
-.logo {
+.pege-nav {
   display: flex;
   align-items: center;
 }
 
-.logo__style {
+.logo {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -398,7 +398,7 @@ button {
   color: var(--secondary-text-white);
 }
 
-.hero__btm {
+.hero__btn {
   display: inline-block;
   min-width: 200px;
   font-family: inherit;
@@ -415,7 +415,7 @@ button {
   color: var(--secondary-text-white);
   transition: background-color var(--transition-speed), color 250ms var(--transition-speed);
 }
-.hero__btm:hover, .hero__btm:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--hover-color-btm);
   color: var(--secondary-text-white);
 }
@@ -430,7 +430,7 @@ button {
   width: 270px;
 }
 
-.description__hdr {
+.description__titel {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -440,7 +440,7 @@ button {
   color: var(--secondary-text);
 }
 
-.description__icon {
+.description__box {
   background-color: var(--secondory-background-color);
   height: 120px;
   display: flex;
@@ -482,11 +482,11 @@ button {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.about__img {
+.about__box {
   position: relative;
 }
 
-.about--padding {
+.about--none-padding {
   padding-top: 0;
 }
 
@@ -500,7 +500,7 @@ button {
   background: #f5f4fa;
 }
 
-.team__name {
+.team__titel {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -510,7 +510,7 @@ button {
   color: var(--secondary-text);
 }
 
-.team__link {
+.socials__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -520,11 +520,11 @@ button {
   background-color: var(--primary-background-color);
   transition: background-color var(--transition-speed);
 }
-.team__link:hover, .team__link:focus {
+.socials__link:hover, .socials__link:focus {
   background: var(--accent-color);
 }
 
-.team__social {
+.socials {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -535,7 +535,7 @@ button {
   padding-bottom: 30px;
 }
 
-.team__job {
+.team__text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -543,11 +543,11 @@ button {
   letter-spacing: 0.03em;
 }
 
-.team__svg {
+.socials__svg {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
 }
-.team__link:hover .team__svg, .team__link:focus .team__svg {
+.socials__link:hover .socials__svg, .socials__link:focus .socials__svg {
   fill: var(--primary-background-color);
 }
 
@@ -557,13 +557,13 @@ button {
   background: #ffffff;
 }
 
-.client {
+.clients {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.client__link {
+.clients__link {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -574,25 +574,25 @@ button {
   height: 100%;
   transition: border var(--transition-speed);
 }
-.client__link:hover, .client__link:focus {
+.clients__link:hover, .clients__link:focus {
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
 
-.client__list {
+.clients__item {
   width: 170px;
   height: 92px;
 }
 
-.client__logo {
+.clients__logo {
   fill: var(--icon-color);
   transition: fill var(--transition-speed);
 }
-.client__link:hover .client__logo, .client__link:focus .client__logo {
+.clients__link:hover .clients__logo, .clients__link:focus .clients__logo {
   fill: var(--accent-color);
 }
 
-.contact__link {
+.contacts__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -604,21 +604,21 @@ button {
   color: var(--primary-text);
   transition: color var(--transition-speed);
 }
-.contact__link:hover, .contact__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
-.contact {
+.contacts {
   display: flex;
   margin-left: auto;
 }
 
-.contact__icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.contact__item + .contact__item {
+.contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
